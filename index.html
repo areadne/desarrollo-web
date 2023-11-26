@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkinCareCero</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <header>
+        <section class="menu__container">
+            <nav class="header__menu">
+
+                <label for="menu" class="nav__label">
+                    <img src="../assets/menu-alt-left-regular-24.png" alt="logo-menu" class="nav__img">
+                </label>
+                <input type="checkbox" id="menu" class="nav__input">
+
+                <ul class="header__menu-ul">
+                    <li class="header__menuHome"><a class="header__menuHome" href="index.html">Home</a></li>
+                    <li class="header__menuNosotros"><a class="header__menuNosotros"
+                            href="/pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="header__menuTienda"><a class="header__menuTienda" href="./pages/tienda.html">Tienda</a>
+                    </li>
+                    <li class="header__menuContactanos"><a class="header__menuContactanos"
+                            href="/pages/contactanos.html">Contacto</a></li>
+                </ul>
+
+            </nav>
+
+            <div id="header__buscar">
+                <img src="./assets/lupa.jpg" alt="lupa" class="header__lupaImg">
+                <input type="text" placeholder="Buscar..." class="header__inputBuscar">
+            </div>
+
+            <section class="header__cartBox"><a class="header__cartBox" href="./pages/carrito.html">
+                    <img src="./assets/cart.jpg" alt="carrito" class="header__cartBoxImg">
+                    <button for="numeroEnCarrito" class="header__cartBoxNumber">6</button>
+                </a>
+            </section>
+        </section>
+    </header>
+
+
+    <section id="header__logoPrincipal">
+        <img src="./assets/logo-principal.png" alt="logoPrincipal" class="logoPrincipal__img">
+    </section>
+
+
+    <!-- inicio carrusel boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <div id="carousel">
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/producto-buffet.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="carousel__h5">Serum Buffet The ordinary</h5>
+                        <a class="carousel__boton" href="./pages/tienda.html">Ir a la tienda</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/producto-peeling-solution.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="carousel__h5">Peeling Solution The Ordinary</h5>
+                        <a class="carousel__boton" href="./pages/tienda.html">Ir a la tienda</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/producto-resveratrol.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="carousel__h5">Serum Resveratrol The Ordinary</h5>
+                        <a class="carousel__boton" href="./pages/tienda.html">Ir a la tienda</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+    </div>
+
+
+    <!-- fin carrusel boostrap -->
+    <p class="linea-divisoria">
+
+
+    <section id="home__texto-nosotros" class="home__texto-nosotros">
+        <h1 class="home__texto-nosotros-h2">Nosotros</h1>
+        <p class="home__texto-nosotros-p">En SkinCare Cero estamos comprometidos con brindarte una experiencia de
+            belleza y cuidado de la piel
+            excepcional. Nuestra misión es ayudarte a descubrir y mantener la mejor versión de ti mismo a través de
+            productos de skincare de alta calidad, diseñados para nutrir, revitalizar y embellecer tu piel. Nos
+            esforzamos por ofrecer soluciones efectivas y personalizadas que resalten tu belleza natural,
+            promoviendo
+            una piel saludable y radiante</p>
+    </section>
+
+    <p class="linea-divisoria">
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="footer__address">
+                        <img src="./assets/Skincarecero.JPG" alt="footerLogo" class="footer__logo">
+                        <p class="footer__parrafo">Av. Italia 2310, Providencia, Santiago de Chile</p>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="footer__menu">
+                        <ul class="footer__menu-ul">
+                            <li class="footer__menu">MENÚ</li>
+                            <li class="footer__menuHome"><a class="footer__menuHome" href="index.html">Home</a></li>
+                            <li class="footer__menuNosotros"><a class="footer__menuNosotros"
+                                    href="pages/nosotros.html">Nosotros</a></li>
+                            <li class="footer__menuTienda"><a class="footer__menuTienda"
+                                    href="pages/tienda.html">Tienda</a>
+                            </li>
+                            <li class="footer__menuContactanos"><a class="footer__menuContactanos"
+                                    href="pages/contactanos.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="footer__redes">
+                        <ul class="footer__redes-ul">
+                            <li class="footer__redes">ENCUENTRANOS EN</li>
+                            <li class="footer__facebook"><a class="footer__facebook"
+                                    href="https://www.facebook.com/?locale=es_LA" target="_blank">Facebook</a></li>
+                            <li class="footer__twitter"><a class="footer__twitter" href="https://twitter.com/?lang=es"
+                                    target="_blank">Twitter</a></li>
+                            <li class="footer__instagram"><a class="footer__instagram" href="https://www.instagram.com/"
+                                    target="_blank">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+    </footer>
+    <br>
+    <section class="footer__firma">
+        <p class="linea-divisoria">
+        <p> &copy; SkinCareCero</p>
+    </section>
+
+</body>
+
+</html>
