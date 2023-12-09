@@ -1,0 +1,85 @@
+h1 {
+  text-align: center;
+}
+
+.carrito {
+  &__contenedorProductos {
+    @include flex-wrap-center
+  }
+
+  &__contenedorProducto {
+    padding: 30px;
+    margin: 30px;
+    text-align: center;
+    align-items: center;
+  }
+
+  &__contenedorCantidad {
+    @include flex-row-center
+  }
+
+  &__contenedorCantidad p {
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+  }
+
+  &__contenedorPrecio {
+    @include flex-row-center
+  }
+
+  &__contenedorPrecio p {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+  }
+
+  &__contenedorSubtotal {
+    @include flex-row-center
+  }
+
+  &__contenedorSubtotal p {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+  }
+
+  &__fotoProducto {
+    height: 220px;
+    width: 220px;
+    border: $border-foto-producto;
+  }
+
+  &__totalCompra {
+    @include flex-column-center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  &__botonSumar {
+    @include boton-colores(#00aa1b, white);
+    box-shadow: $box-shadow-botones;
+    @include boton-corto;
+  }
+
+  &__botonRestar {
+    @include boton-colores(#e91f05, white);
+    box-shadow: $box-shadow-botones;
+    @include boton-corto;
+  }
+
+  &__botonEliminar {
+    @include boton-colores(#e91f05, white);
+    box-shadow: $box-shadow-botones;
+    @include boton-grande;
+  }
+
+  &__botonFinalizaCompra {
+    @include boton-colores(#00aa1b, white);
+    box-shadow: $box-shadow-botones;
+    @include boton-grande;
+  }
+}

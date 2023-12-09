@@ -1,0 +1,29 @@
+h1 {
+  text-align: center;
+}
+
+.tienda__fotoProducto {
+  height: auto;
+  width: 220px;
+  border: $border-foto-producto;
+}
+
+.tienda__contenedorPrincipal {
+  @include flex-wrap-center
+}
+
+.tienda__contenedorProducto {
+  @include flex-column-center;
+  padding: 40px;
+  text-align: center;
+}
+
+.tienda__contenedorProducto p {
+  text-align: center;
+}
+
+.tienda__boton {
+  @include boton-colores(#00aa1b, white);
+  box-shadow: $box-shadow-botones;
+  @include boton-grande;
+}

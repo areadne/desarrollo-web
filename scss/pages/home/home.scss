@@ -1,0 +1,140 @@
+
+#carousel h1 {
+  color: black;
+  display: block;
+  display: inline-block;
+}
+
+.carousel {
+  & h2 {
+    color: #000000;
+    margin-bottom: 20px;
+  }
+
+  &__boton {
+    @include boton-colores(#00aa1b, white);
+    box-shadow: $box-shadow-botones;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
+#home__newsletter {
+  display: grid;
+  grid-template-areas: "newsletter datos";
+  grid-template-columns: 60% 40%;
+  padding-bottom: 40px;
+}
+
+.home {
+  &__newsletter-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__newsletter h2 {
+    margin: 40px;
+    padding-left: 40px;
+    text-align: left;
+    font-size: 50px;
+  }
+
+  &__newsletter p {
+    width: 80%;
+    margin-left: 40px;
+    padding-left: 40px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 2;
+  }
+
+  &__newsletter-data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__newsletter-input {
+    width: 350px;
+    height: 40px;
+    margin-top: 10%;
+    border-radius: 5px;
+    border: solid 1px #ced0da;
+    transition: 0.5s;
+  }
+
+  &__newsletter-input:focus {
+    width: 350px;
+    height: 40px;
+    margin-top: 10%;
+    border-radius: 5px;
+    border: solid 2px #0c2ed8;
+    background-color: rgb(240, 240, 253);
+  }
+
+  &__newsletter-button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: $box-shadow-botones;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 15px;
+  }
+
+  &__texto-nosotros {
+    @include flex-column-center;
+    padding: 20px ;
+    margin: 40px;
+  }
+
+  &__texto-nosotros p {
+    margin: 20px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 2;
+  }
+
+  &__texto-nosotros h1 {
+    margin: 20px;
+    text-align: center;
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .footer__address,
+  .footer__menu-ul,
+  .footer__redes-ul {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  #home__newsletter {
+    @include flex-column-center;
+  }
+
+  .home__newsletter-data {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home__newsletter-input {
+    width: auto;
+  }
+
+  .home__newsletter p {
+    text-align: center;
+  }
+
+  .home__newsletter h2 {
+    text-align: center;
+  }
+}

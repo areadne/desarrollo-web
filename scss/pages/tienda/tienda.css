@@ -1,0 +1,41 @@
+h1 {
+  text-align: center;
+}
+
+.tienda__fotoProducto {
+  height: auto;
+  width: 220px;
+  border: 1px solid rgb(204, 201, 201);
+}
+
+.tienda__contenedorPrincipal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tienda__contenedorProducto {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+  align-items: center;
+}
+
+.tienda__contenedorProducto p {
+  text-align: center;
+}
+
+.tienda__boton {
+  background-color: #00aa1b;
+  color: white;
+  box-shadow: 5px 5px 10px 0px rgba(102, 99, 99, 0.5);
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 10px;
+}/*# sourceMappingURL=tienda.css.map */

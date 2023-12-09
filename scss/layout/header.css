@@ -1,0 +1,138 @@
+#header__buscar {
+  text-align: end;
+}
+#header__logoPrincipal {
+  text-align: center;
+}
+#header__logoPrincipal {
+  width: auto;
+  height: auto;
+}
+
+.header__buscarInput {
+  background-color: #00aa1b;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  color: #fafdff;
+}
+.header__lupaImg {
+  height: 25px;
+  width: 25px;
+  position: relative;
+  top: -2px;
+  left: -10px;
+}
+.header__inputBuscar {
+  width: auto;
+  height: 25px;
+  border-radius: 5px;
+  border-color: rgb(245, 243, 243);
+  margin: 2px;
+  transition: 0.5s;
+}
+.header__inputBuscar:focus {
+  width: auto;
+  height: 25px;
+  border-radius: 5px;
+  border-color: rgb(12, 12, 97);
+  background-color: rgb(240, 240, 253);
+  margin: 2px;
+}
+.header__menu-ul {
+  list-style-type: none;
+  align-content: center;
+  justify-content: center;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3em;
+  padding: 0 10 0 0;
+  margin: 0;
+}
+.header__menu {
+  background: white;
+}
+.header__menuHome, .header__menuNosotros, .header__menuTienda, .header__menuContactanos {
+  text-decoration: none;
+  padding-right: 5%;
+  color: #000000;
+}
+.header__cartBox {
+  display: inline-block;
+  text-decoration: none;
+}
+.header__cartBoxImg {
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+}
+.header__cartBoxNumber {
+  position: relative;
+  top: -5px;
+  left: -10px;
+  background-color: #00aa1b;
+  width: 20px;
+  height: 20px;
+  border-radius: 30px;
+  border: none;
+  color: #fafdff;
+}
+
+.nav__label, .nav__input {
+  display: none;
+}
+.nav__input:checked + .nav__menu {
+  background: #e91f05;
+}
+
+.menu__container {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  box-shadow: 5px 5px 10px 0px rgba(102, 99, 99, 0.5);
+}
+
+@media (max-width: 850px) {
+  .nav__label {
+    display: block;
+    cursor: pointer;
+  }
+  .header__menu-ul {
+    background: black;
+  }
+  .header__menu-ul {
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    height: 30px;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    -webkit-clip-path: circle(0 at center);
+            clip-path: circle(0 at center);
+    box-shadow: 5px 5px 10px 0px rgba(180, 175, 175, 0.5);
+  }
+  .header__menuHome,
+  .header__menuNosotros,
+  .header__menuTienda,
+  .header__menuContactanos {
+    text-decoration: none;
+    padding-right: 5%;
+    padding-top: 15px;
+    color: black;
+    padding: 5px;
+  }
+  .nav__input:checked + .header__menu-ul {
+    -webkit-clip-path: circle(100% at center);
+            clip-path: circle(100% at center);
+  }
+}/*# sourceMappingURL=header.css.map */

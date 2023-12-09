@@ -1,0 +1,45 @@
+
+.footer {
+    &__address {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    &__logo {
+      height: 100px;
+      width: 100px;
+      margin-top: 40px;
+      margin-left: 60px;
+    }
+  
+    &__parrafo {
+      width: 200px;
+      margin-left: 60px;
+      margin-top: 10px;
+    }
+  
+    &__menu,
+    &__menuHome,
+    &__menuNosotros,
+    &__menuTienda,
+    &__menuContactanos {
+      text-decoration: none;
+      list-style: none;
+      margin-top: 15px;
+    }
+  
+    &__redes,
+    &__facebook,
+    &__twitter,
+    &__instagram {
+      text-decoration: none;
+      list-style: none;
+      margin-top: 15px;
+    }
+  
+    &__firma {
+      margin: 20px;
+      text-align: center;
+    }
+  }
+  

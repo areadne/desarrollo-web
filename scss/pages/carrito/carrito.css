@@ -1,0 +1,106 @@
+h1 {
+  text-align: center;
+}
+
+.carrito__contenedorProductos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.carrito__contenedorProducto {
+  padding: 30px;
+  margin: 30px;
+  text-align: center;
+  align-items: center;
+}
+.carrito__contenedorCantidad {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.carrito__contenedorCantidad p {
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 10px;
+}
+.carrito__contenedorPrecio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.carrito__contenedorPrecio p {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 10px;
+}
+.carrito__contenedorSubtotal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.carrito__contenedorSubtotal p {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 10px;
+}
+.carrito__fotoProducto {
+  height: 220px;
+  width: 220px;
+  border: 1px solid rgb(204, 201, 201);
+}
+.carrito__totalCompra {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 10px;
+  text-align: center;
+  align-items: center;
+}
+.carrito__botonSumar {
+  background-color: #00aa1b;
+  color: white;
+  box-shadow: 5px 5px 10px 0px rgba(102, 99, 99, 0.5);
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 10px;
+}
+.carrito__botonRestar {
+  background-color: #e91f05;
+  color: white;
+  box-shadow: 5px 5px 10px 0px rgba(102, 99, 99, 0.5);
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 10px;
+}
+.carrito__botonEliminar {
+  background-color: #e91f05;
+  color: white;
+  box-shadow: 5px 5px 10px 0px rgba(102, 99, 99, 0.5);
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 10px;
+}
+.carrito__botonFinalizaCompra {
+  background-color: #00aa1b;
+  color: white;
+  box-shadow: 5px 5px 10px 0px rgba(102, 99, 99, 0.5);
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 10px;
+}/*# sourceMappingURL=carrito.css.map */

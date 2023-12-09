@@ -1,0 +1,198 @@
+#header {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  grid-template-areas: "buscar menu carrito";
+  grid-template-columns: 1fr 2fr 0.5fr;
+  align-items: center;
+  justify-items: center;
+  background-color: white;
+  box-shadow: $box-shadow-botones;
+
+  &__buscar {
+    text-align: end;
+  }
+
+  &__logoPrincipal {
+    text-align: center;
+  }
+
+  &__logoPrincipal {
+    width: auto;
+    height: auto;
+  }
+}
+
+.header {
+  &__buscarInput {
+    background-color: #00aa1b;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    color: #fafdff;
+  }
+
+  &__lupaImg {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top: -2px;
+    left: -10px;
+  }
+
+  &__inputBuscar {
+    width: auto;
+    height: 25px;
+    border-radius: 5px;
+    border-color: rgb(245, 243, 243);
+    margin: 2px;
+    transition: 0.5s;
+  }
+
+  &__inputBuscar:focus {
+    width: auto;
+    height: 25px;
+    border-radius: 5px;
+    border-color: rgb(12, 12, 97);
+    background-color: rgb(240, 240, 253);
+    margin: 2px;
+  }
+
+  &__menu-ul,
+  &__menu-ul-section {
+    list-style-type: none;
+    align-content: center;
+    justify-content: center;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+    padding: 0 10 0 0;
+    margin: 0;
+  }
+
+  &__menu {
+    background: white;
+  }
+
+  &__menuHome,
+  &__menuNosotros,
+  &__menuTienda,
+  &__menuContactanos {
+    text-decoration: none;
+    padding-right: 5%;
+    color: #000000;
+  }
+
+  &__cartBox {
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  &__cartBoxImg {
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+  }
+
+  &__cartBoxNumber {
+    position: relative;
+    top: -5px;
+    left: -10px;
+    background-color: #00aa1b;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    border: none;
+    color: #fafdff;
+  }
+}
+
+.nav {
+  &__label,
+  &__input {
+    display: none;
+  }
+
+  &__input:checked + &__menu {
+    background: #e91f05;
+  }
+}
+
+.menu__container {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  box-shadow: 5px 5px 10px 0px rgba(102, 99, 99, 0.5);
+}
+
+@media (max-width: 850px) {
+  .nav__label {
+    display: block;
+    cursor: pointer;
+  }
+
+  .header__menu-ul {
+    background: black;
+  }
+
+  .header__menu-ul {
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    background-color: white;
+    height: 176px;
+    left: 0;
+    display: flex;
+    gap: 7px;
+    flex-direction: column;
+    align-items: center;
+    -webkit-clip-path: circle(0 at center);
+    clip-path: circle(0 at center);
+    box-shadow: 5px 5px 10px 0px rgba(180, 175, 175, 0.5);
+    padding: 10px;
+
+    .header__menu-ul-section {
+      position: relative;
+      top: -5px;
+      left: -10px;
+      height: 176px;
+      left: 0;
+      display: flex;
+      gap: 7px;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 370px) {
+    #header__buscar {
+      display: none;
+    }
+  }
+
+  .header__menu-ul-section {
+    position: relative;
+    top: -5px;
+    left: -10px;
+  }
+
+  .header__menuHome,
+  .header__menuNosotros,
+  .header__menuTienda,
+  .header__menuContactanos {
+    text-decoration: none;
+    padding-right: 5%;
+    padding-top: 15px;
+    color: black;
+    padding: 5px;
+  }
+
+  .nav__input:checked + .header__menu-ul {
+    clip-path: circle(100% at center);
+  }
+}
