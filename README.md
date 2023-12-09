@@ -4,25 +4,25 @@ Estructura del proyecto en SASS:
 
 # base
 Contiene:
--Formateo de la CSS
--Logo principal
--Linea divisoria
+- Formateo de la CSS
+- Logo principal
+- Linea divisoria
 
 # helpers
 Contiene:
--Mixins
--Variables
+- Mixins
+- Variables
 
 # layout
 Contiene:
--Footer
--Header
+- Footer
+- Header
 
 # pages
 Contiene estilos de cada seccion:
--home
--contacto
--carrito
--tienda
--nosotros
+- home
+- contacto
+- carrito
+- tienda
+- nosotros
 
